@@ -1,5 +1,5 @@
 {
-  "name": "nk2-frontend-boilerplate",
+  "name": "nk2-backend-boilerplate",
   "version": "0.0.1",
   "description": "none",
   "main": "./dist/index.js",
