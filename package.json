@@ -1,0 +1,35 @@
+{
+  "name": "nk2-frontend-boilerplate",
+  "version": "0.0.1",
+  "description": "none",
+  "main": "./dist/index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "eslint": "^5.5.0",
+    "nodemon": "^1.18.5",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "@nuuf/nk2-backend": "^1.1.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.9",
+    "morgan": "^1.9.1",
+    "ws": "^6.1.0"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "nodemon --exec babel-node src/index.js",
+    "serve": "node dist/index.js",
+    "clear-dist": "rimraf dist",
+    "ce": "rimraf dist",
+    "be": "npm run ce && npm run build",
+    "lint-f": "eslint src --fix",
+    "lint": "eslint src"
+  },
+  "keywords": [],
+  "author": "nuuf",
+  "license": ""
+}
