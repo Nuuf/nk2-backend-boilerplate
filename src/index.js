@@ -1,7 +1,7 @@
 import express from 'express';
 import http from 'http';
 import morgan from 'morgan';
-import { Case2D } from '@nuuf/nk2-backend';
+import { Container2D } from '@nuuf/nk2-backend';
 import * as WebSocket from 'ws';
 import mongoose from 'mongoose';
 
@@ -12,7 +12,7 @@ const server = http.createServer( app );
 const wss = new WebSocket.Server( { server: server } );
 const PORT = 1337;
 const ADDRESS = '127.0.0.1';
-const main = new Case2D( 0, 0 );
+const main = new Container2D( 0, 0 );
 
 wss.on( 'connection', ( socket ) => {
 
