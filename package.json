@@ -1,6 +1,6 @@
 {
   "name": "nk2-backend-boilerplate",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "none",
   "main": "./dist/index.js",
   "devDependencies": {
@@ -13,7 +13,7 @@
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "@nuuf/nk2-backend": "^1.3.7",
+    "@nuuf/nk2-backend": "^1.3.8",
     "express": "^4.16.4",
     "mongoose": "^5.3.9",
     "morgan": "^1.9.1",
