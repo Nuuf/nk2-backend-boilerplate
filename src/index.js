@@ -3,9 +3,9 @@ import http from 'http';
 import morgan from 'morgan';
 import { Container2D } from '@nuuf/nk2-backend';
 import * as WebSocket from 'ws';
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
 
-mongoose.connect( 'mongodb://useradmin:pwd123456@127.0.0.1:27017/myDB' );
+// mongoose.connect( 'mongodb://useradmin:pwd123456@127.0.0.1:27017/myDB' );
 
 const app = express();
 const server = http.createServer( app );
