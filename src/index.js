@@ -1,9 +1,11 @@
 import express from 'express';
 import http from 'http';
 import morgan from 'morgan';
-import { Container2D } from '@nuuf/nk2-backend';
+import { Container2D, Time } from '@nuuf/nk2-backend';
 import * as WebSocket from 'ws';
 // import mongoose from 'mongoose';
+
+Time.Ticker.LOG = false;
 
 // mongoose.connect( 'mongodb://useradmin:pwd123456@127.0.0.1:27017/myDB' );
 
@@ -46,5 +48,23 @@ server.listen( PORT, ADDRESS, () => {
   const address = server.address();
 
   console.log( 'Server running on port: ' + address.address + ':' + address.port );
+
+  const timer = new Time.Timer( 60 );
+
+  timer.Start();
+  const ticker = new Time.Ticker( ( delta ) => {
+
+    console.log( delta, 'ms delta' );
+    timer.Process();
+  
+  }, 60, true );
+
+  timer.onFinish.Add( () => {
+
+    console.log( 'stop' );
+    ticker.Stop();
+  
+  } );
+  ticker.StartAccurate();
 
 } );
