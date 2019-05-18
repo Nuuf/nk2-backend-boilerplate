@@ -565,10 +565,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@nuuf/nk2-backend@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@nuuf/nk2-backend/-/nk2-backend-2.2.1.tgz#0f1838a2cda2c71a0d07ffcf7f24489265baecda"
-  integrity sha512-BIEwLd0745kiG0QeLAF6RpiOD8+6BNzeRWiKaYczNXQo/pEgRdRT/ee/7Tj5PkFaIJP5QAlM6UEAdF2nzHQrvg==
+"@nuuf/nk2-backend@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@nuuf/nk2-backend/-/nk2-backend-2.2.2.tgz#79bca3f5d0385c1c750cd2dbba37e8c79dcd3312"
+  integrity sha512-X51c7/MzQf1PXZbv3t2COflHbJuDGKAz9uv9keEzfonBEqUgTn+PR9dM119GBlrjHPoFod+ot82lNoRDMTFceQ==
 
 abbrev@1:
   version "1.1.1"
