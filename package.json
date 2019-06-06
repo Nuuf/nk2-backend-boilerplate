@@ -4,20 +4,20 @@
   "description": "none",
   "main": "./dist/index.js",
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.0.0",
-    "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "eslint": "^5.5.0",
-    "nodemon": "^1.18.5",
-    "rimraf": "^2.6.2"
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "eslint": "^5.16.0",
+    "nodemon": "^1.19.1",
+    "rimraf": "^2.6.3"
   },
   "dependencies": {
-    "@nuuf/nk2-backend": "^2.2.3",
-    "express": "^4.16.4",
-    "mongoose": "^5.3.9",
+    "@nuuf/nk2-backend": "^2.2.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.13",
     "morgan": "^1.9.1",
-    "ws": "^6.1.0"
+    "ws": "^7.0.0"
   },
   "scripts": {
     "build": "babel src -d dist",
@@ -31,5 +31,5 @@
   },
   "keywords": [],
   "author": "nuuf",
-  "license": ""
+  "license": "MIT"
 }
